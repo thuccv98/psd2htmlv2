@@ -46,17 +46,26 @@ a {
   line-height: normal;
 }
 
+.button:hover {
+  color: #579aff;
+}
+
 .button--primary {
   color: white;
   background-color: #579aff;
 }
 
 .button--primary:hover {
-  background-color: blanchedalmond;
+  background-color: #f1c1aa;
 }
 
-.button:hover {
+.button--outline {
+  border: 1px solid;
   color: #579aff;
+}
+
+.button--outline:hover {
+  color: #f1c1aa;
 }
 
 .header {
@@ -101,4 +110,47 @@ a {
 .header-menu-link:hover {
   color: #579aff;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+
+.banner-info {
+  width: 35%;
+}
+
+.banner-image {
+  width: 65%;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.banner-heading {
+  font-size: 55px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+.banner-heading span {
+  display: block;
+}
+
+.banner-desc {
+  font-weight: 300;
+  line-height: 1.5;
+  color: #272e35;
+  margin-bottom: 50px;
+}
+
+.banner-links .button:first-child {
+  margin-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/*# sourceMappingURL=index.css.map */

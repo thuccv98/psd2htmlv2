@@ -1,7 +1,3 @@
-// Variables
-$gray-dark: #272e35;
-$primary-color: #579aff;
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +29,7 @@ a {
   margin: 0 auto;
 }
 
-// Button
+// Shared
 .button {
   display: inline-block;
   font-size: 16px;
@@ -44,42 +40,21 @@ a {
   cursor: pointer;
   background-color: transparent;
   line-height: normal;
+  &:hover {
+    color: $primary-color;
+  }
   &--primary {
     color: white;
     background-color: $primary-color;
     &:hover {
-      background-color: blanchedalmond;
+      background-color: $hover-color;
     }
   }
-  &:hover {
-    color: $primary-color;
-  }
-}
-
-.header {
-  padding-top: 43px;
-  display: flex;
-  align-items: center;
-  &-logo {
-    display: block;
-    margin-right: 180px;
-  }
-  &-auth {
-    margin-left: auto;
-  }
-  &-menu {
-    display: flex;
-    align-items: center;
-    list-style: none;
-  }
-  &-menu-item:not(:first-child) {
-    margin-left: 75px;
-  }
-  &-menu-link {
-    color: $gray-dark;
-    transition: color 0.2s ease-in-out;
+  &--outline {
+    border: 1px solid;
+    color: $gray-blur;
     &:hover {
-      color: $primary-color;
+      color: $hover-color;
     }
   }
 }
