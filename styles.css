@@ -33,4 +33,72 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.button {
+  display: inline-block;
+  font-size: 16px;
+  color: #272e35;
+  padding: 20px 45px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  line-height: normal;
+}
+
+.button--primary {
+  color: white;
+  background-color: #579aff;
+}
+
+.button--primary:hover {
+  background-color: blanchedalmond;
+}
+
+.button:hover {
+  color: #579aff;
+}
+
+.header {
+  padding-top: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 180px;
+}
+
+.header-auth {
+  margin-left: auto;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.header-menu-item:not(:first-child) {
+  margin-left: 75px;
+}
+
+.header-menu-link {
+  color: #272e35;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-menu-link:hover {
+  color: #579aff;
+}
 /*# sourceMappingURL=styles.css.map */
