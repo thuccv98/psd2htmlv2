@@ -18,6 +18,9 @@ img {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 
 .wrapper {
   max-width: 1440px;
@@ -40,6 +43,8 @@ a {
   cursor: pointer;
   background-color: transparent;
   line-height: normal;
+  transition: all 0.2s linear;
+
   &:hover {
     color: $primary-color;
   }

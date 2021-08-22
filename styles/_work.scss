@@ -3,15 +3,15 @@
   padding-bottom: 50px;
   &-list {
     // Chia item theo flex
-    // display: flex;
-    // justify-content: space-between;
     // 2 * 70
     // 140 / 3 = 46.67
+    display: flex;
+    justify-content: space-between;
 
     // Chia item theo Grid
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 70px;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-column-gap: 70px;
   }
   // Chia theo flex
   // &-item {
@@ -19,8 +19,9 @@
   // }
 
   &-item {
+    width: calc(33.33% - 46.67px);
     padding: 40px 30px;
-    border: 1px solid $gray-light;
+    border: 1px solid #eee;
     border-radius: 14px;
     display: flex;
     align-items: center;
