@@ -121,3 +121,21 @@ ul {
   font-weight: 300;
   line-height: 1.6;
 }
+.text--dark {
+  color: $gray-dark;
+}
+
+.logo {
+  display: inline-block;
+}
+.bg {
+  &-google {
+    background-color: #ff7879;
+  }
+  &-twitter {
+    background-color: #7aafff;
+  }
+  &-insta {
+    background-color: #ffb978;
+  }
+}
