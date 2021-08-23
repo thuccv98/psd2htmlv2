@@ -34,6 +34,11 @@
 }
 
 // Responsive
+@media (max-width: 1279px) {
+  .started-smile {
+    transform: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .started {
     margin-top: 0;

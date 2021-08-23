@@ -212,10 +212,6 @@ ul {
   list-style: none;
 }
 
-.header-menu-item:not(:first-child) {
-  margin-left: 75px;
-}
-
 .header-menu-link {
   color: #272e35;
   -webkit-transition: color 0.2s ease-in-out;
@@ -224,6 +220,21 @@ ul {
 
 .header-menu-link:hover {
   color: #579aff;
+}
+
+.menu-toggle {
+  font-size: 25px;
+  margin-left: 15px;
+  color: #3270d8;
+}
+
+@media (min-width: 1024px) {
+  .header-menu-item:not(:first-child) {
+    margin-left: 75px;
+  }
+  .menu-toggle {
+    display: none;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -240,10 +251,39 @@ ul {
 
 @media (max-width: 1023px) {
   .header-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 300px;
+    background-color: white;
+    z-index: 99999;
+    display: block;
+    border-left: 1px solid #eee;
+    padding: 50px 15px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.3s linear;
+    transition: -webkit-transform 0.3s linear;
+    transition: transform 0.3s linear;
+    transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+  }
+  .header-menu.is-active {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   .header-auth {
     margin-left: auto;
+  }
+  .header-menu-link {
+    display: block;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .header-menu-link:hover {
+    color: white;
+    background-color: #579aff;
   }
 }
 
@@ -304,6 +344,10 @@ ul {
   }
   .banner-desc {
     margin-bottom: 30px;
+  }
+  .banner .banner-image {
+    -webkit-transform: none;
+            transform: none;
   }
   .banner-links .button {
     padding: 15px 20px;
@@ -858,6 +902,13 @@ ul {
           transform: translate(50%, -50%);
 }
 
+@media (max-width: 1279px) {
+  .started-smile {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .started {
     margin-top: 0;
@@ -929,6 +980,7 @@ ul {
 
 @media screen and (max-width: 767px) {
   .footer {
+    padding: 0 0 20px;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     -ms-grid-rows: auto auto;
