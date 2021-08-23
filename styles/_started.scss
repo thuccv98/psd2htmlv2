@@ -32,3 +32,15 @@
   right: 0;
   transform: translate(50%, -50%);
 }
+
+// Responsive
+@media screen and (max-width: 767px) {
+  .started {
+    margin-top: 0;
+  }
+  .started-comment,
+  .started-smile {
+    max-width: 20%;
+    transform: none;
+  }
+}

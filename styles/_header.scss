@@ -24,3 +24,32 @@
     }
   }
 }
+
+// Responsive
+@media (max-width: 1279px) {
+  .header-logo {
+    margin-right: 0;
+  }
+  .header-menu {
+    margin: 0 auto;
+  }
+  .header-auth {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .header-menu {
+    display: none;
+  }
+  .header-auth {
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header-logo-image {
+    max-width: 90px;
+  }
+}

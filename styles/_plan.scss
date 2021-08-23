@@ -16,13 +16,16 @@
     position: relative;
     transition: all 0.2s linear;
   }
-  &-item:hover {
-    border-color: transparent;
-    box-shadow: 0 0 50px 5px rgba(black, 0.1);
-  }
-  &-item:hover .plan-start {
-    background-color: $primary-color;
-    color: white;
+
+  @media (hover: hover) {
+    &-item:hover {
+      border-color: transparent;
+      box-shadow: 0 0 50px 5px rgba(black, 0.1);
+    }
+    &-item:hover .plan-start {
+      background-color: $primary-color;
+      color: white;
+    }
   }
   &-name {
     font-size: 20px;
@@ -81,5 +84,44 @@
     text-transform: capitalize;
     border-radius: 0 20px 0 20px;
     font-size: 14px;
+  }
+
+  // Responsive
+  @media (max-width: 1023px) {
+    padding-bottom: 70px;
+    &-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 400px;
+      grid-auto-flow: column;
+      grid-gap: 0 50px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      grid-template-columns: unset;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 479px) {
+    &-list {
+      grid-auto-columns: 80%;
+    }
+    &-item {
+      padding: 12px 25px;
+    }
+    &-feature-item:last-of-type {
+      margin-bottom: 25px;
+    }
   }
 }

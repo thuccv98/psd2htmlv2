@@ -139,3 +139,19 @@ ul {
     background-color: #ffb978;
   }
 }
+
+// Responsive
+@media (max-width: 767px) {
+  .button {
+    padding: 10px 20px;
+  }
+  .block {
+    margin-bottom: 50px;
+    &-heading {
+      font-size: 35px;
+    }
+    &-caption {
+      margin-bottom: 20px;
+    }
+  }
+}
