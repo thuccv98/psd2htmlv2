@@ -541,4 +541,52 @@ ul {
   margin: 0 5px;
   color: #ffcb46;
 }
+
+.started {
+  max-width: 900px;
+  margin: 100px auto 50px;
+  border-radius: 20px;
+  background-color: #fbfbfb;
+  position: relative;
+  padding: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.started-heading {
+  margin-bottom: 30px;
+}
+
+.started-desc {
+  max-width: 245px;
+  margin-bottom: 50px;
+  color: #272e35;
+}
+
+.started-caption {
+  font-size: 20px;
+}
+
+.started-comment {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+.started-smile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
 /*# sourceMappingURL=index.css.map */
